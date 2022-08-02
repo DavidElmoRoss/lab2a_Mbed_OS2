@@ -16,8 +16,13 @@ int main(void)
 
     for(;;) {
         input=getc(stdin);      // get char and put into variable input
-        //  if(input == 0x0d)     // if input is <RETURN>
-        //  putc(0x0a,stdout);    // output a <LINE FEED>
+        putc(input,stdout);
+        fflush(stdout);
+          if(input == 0x0d)     // if input is <RETURN>
+          {
+          putc(0x0a,stdout);    // output a <LINE FEED>
+          }
+          fflush(stdout);
    
     }
 }
