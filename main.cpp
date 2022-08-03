@@ -16,12 +16,12 @@ int main(void)
 
     for(;;) {
         input=getc(stdin);      // get char and put into variable input
-        putc(input,stdout);
+        putc(input,stdout);     // send char to output buffer
           if(input == 0x0d)     // if input is <RETURN>
           {
-          putc(0x0a,stdout);    // output a <LINE FEED>
+          putc(0x0a,stdout);    // send <LF> to output buffer
           }
-          fflush(stdout);       // flush output to screen
+          fflush(stdout);       // flush output buffer to screen
    
     }
 }
