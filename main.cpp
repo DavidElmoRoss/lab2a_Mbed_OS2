@@ -14,12 +14,13 @@ int main(void)
 {
     unsigned char input;    // variable to get char from keyboard
 
-    for(;;) {
+    for(;;)                     // endless loop
+    {
         input=getc(stdin);      // get char and put into variable input
         putc(input,stdout);     // send char to output buffer
           if(input == 0x0d)     // if input is <RETURN>
           {
-          putc(0x0a,stdout);    // send <LF> to output buffer
+             putc(0x0a,stdout); // send <LF> to output buffer
           }
           fflush(stdout);       // flush output buffer to screen
    
