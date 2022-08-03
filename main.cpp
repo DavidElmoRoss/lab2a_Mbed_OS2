@@ -1,5 +1,5 @@
 /*
-    Title:  Program to generate output to the PC screen
+    Title:  Program to generate output to the PC screen using MBED OS2 Library
     Author: Your Name, Student ID, Course CODE, Lab Section
     Date:   Today's Date
     Description:    This program will take characters from the keyboard and
