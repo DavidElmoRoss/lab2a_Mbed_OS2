@@ -12,7 +12,7 @@
  
 int main(void)
 {
-    unsigned char input;    // variable to get char from keyboard
+    unsigned char input;        // variable to get char from keyboard
 
     for(;;)                     // endless loop
     {
